@@ -1,0 +1,65 @@
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50%;
+    padding-top: 30px;
+    .card-list-item {
+        width: 50%;
+        cursor: pointer;
+    }
+}
+.infinite-container {
+    height: 100vh;
+    display: flex;
+}
+
+.card-container {
+    width: 100%;
+}
+.card-content {
+    width: 100%;
+    padding: 25px 50px 25px 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    .card-status {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        color: #ff4d4d;
+    }
+    .client-ava {
+        width: 70px;
+        margin: 0 25px;
+        border-radius: 50%;
+    }
+    .card-side-nav {
+        margin-left: auto;
+    }
+    .next-icon {
+        width: 25px;
+        height: 25px;
+        transition: .2s;
+    }
+}
+.rotate {
+    transform: rotate(90deg);
+}
+@media (max-width: 992px) {
+    .nav-content {
+        order: 2;
+        z-index: 1;
+    }
+    
+    .sc-ion-card-ios-h {
+        margin: 0;
+    }
+    .card-list .card-list-item {
+        width: 100%;
+    }
+    .card-content {
+        padding: 25px 10px 25px 10px;
+    }
+}

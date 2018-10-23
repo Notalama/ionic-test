@@ -1,12 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="header">
+  <ion-text class="header-title">
+    {{headerTitle}}
+  </ion-text>
+  <ion-searchbar [ngClass]="{'header-search': true, 'hidden': btnHidden}" (click)="btnHidden = !btnHidden" color="transparent" (ionInput)="searchClient($event.target.value)" placeholder="Enter Client's Name or Email"></ion-searchbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-</ion-content>
+<ion-row justify-content-around>
+  <ion-col size="12" size-lg="2" no-padding class="nav-content">
+    <app-navigation></app-navigation>
+  </ion-col>
+  <ion-col size="12" size-lg="10" class="main-content">
+    <app-client-list></app-client-list>
+  </ion-col>
+</ion-row>
+<ion-button class="plus-btn" fill="clear" (click)="addClient()" height="125" width="125">
+  <ion-img class="plus-btn-icon" [src]="'../../assets/icon/Client List-Add Clients.svg'"></ion-img>
+</ion-button>

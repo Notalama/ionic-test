@@ -1,0 +1,23 @@
+
+.action-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.activity-icon {
+    width: 55px;
+    height: 60px;
+}
+
+.action-item-text {
+    margin: 30px 0 40px;
+    color: #676767;
+}
+.modal-component {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+

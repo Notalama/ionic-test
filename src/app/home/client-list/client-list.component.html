@@ -1,0 +1,27 @@
+<ion-content class="infinite-container">
+  <ion-list lines="none" class="card-list">
+    <ion-item class="card-list-item" *ngFor="let client of clients; let i = index">
+      <ion-card class="card-container" (click)="openClientActions(client, i);">
+        <div class="card-content">
+          <ion-text class="card-status">{{client.status || ''}}</ion-text>
+          <img [src]="!i ? '../../assets/user-w.jpg' : '../../assets/unknown-user.jpg'" alt="avatar" class="client-ava">
+          <div class="client-descr">
+            <ion-card-title class="card-name">{{client?.name}}</ion-card-title>
+            <ion-card-subtitle>{{client?.email ? client?.email : 'email is not specified'}}</ion-card-subtitle>
+            <ion-text>
+              <ion-icon src="../../assets/icon/ClientList-Coach.svg" class="coach-icon"></ion-icon>
+              {{client?.associatedCoach.name}}
+            </ion-text>
+          </div>
+          <div class="card-side-nav">
+            <ion-icon src="../../assets/icon/Client List-Next.svg" [ngClass]="{'next-icon': true, 'rotate': selectedClient === i}"></ion-icon>
+          </div>
+        </div>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

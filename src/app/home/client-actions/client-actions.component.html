@@ -1,0 +1,18 @@
+<ion-content class="modal-container">
+  <ion-button fill="clear" class="close-modal" (click)="dismiss()">
+    <ion-icon name="close"></ion-icon>
+  </ion-button>
+  <ion-row>
+    <ion-title class="modal-title">{{name}}</ion-title>
+  </ion-row>
+  <div class="modal-content">
+    <ion-row>
+        <ion-col size="6" size-lg="4" *ngFor="let action of actionList">
+          <div class="action-item" (click)="showAction(action.title, name)">
+            <ion-img class="activity-icon" [src]="'../../../assets/icon/Action-' + action.imageSrc + '.svg'"></ion-img>
+            <ion-text class="action-item-text">{{action.title}}</ion-text>
+          </div>
+        </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 51.043">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #676767;
+      }
+    </style>
+  </defs>
+  <g id="appointment" transform="translate(0.002 -24.447)">
+    <path id="Union_1" data-name="Union 1" class="cls-1" d="M35.29,43.988H.886A.908.908,0,0,1,0,43.055V.873A.917.917,0,0,1,.946,0h51.1a.92.92,0,0,1,.908.934v25.41A13.091,13.091,0,1,1,35.29,43.988Zm.454-6.034A11.144,11.144,0,1,0,46.888,26.813,11.146,11.146,0,0,0,35.744,37.955ZM1.967,42.023H34.454a12.561,12.561,0,0,1-.677-4.092,13.091,13.091,0,0,1,13.1-13.086,12.624,12.624,0,0,1,4.115.664V1.967H1.967Z" transform="translate(-0.001 24.447)"/>
+    <g id="Group_85" data-name="Group 85" transform="translate(6.139 36.505)">
+      <g id="Group_84" data-name="Group 84">
+        <path id="Path_282" data-name="Path 282" class="cls-1" d="M89.636,150.2H52.554a.952.952,0,0,0,0,1.9H89.625a.952.952,0,1,0,.012-1.9Z" transform="translate(-51.602 -150.201)"/>
+      </g>
+    </g>
+    <g id="Group_87" data-name="Group 87" transform="translate(6.139 44.256)">
+      <g id="Group_86" data-name="Group 86">
+        <path id="Path_283" data-name="Path 283" class="cls-1" d="M80.976,213.2H52.554a.952.952,0,0,0,0,1.9H80.976a.952.952,0,1,0,0-1.9Z" transform="translate(-51.602 -213.201)"/>
+      </g>
+    </g>
+    <g id="Group_89" data-name="Group 89" transform="translate(6.139 51.883)">
+      <g id="Group_88" data-name="Group 88" transform="translate(0 0)">
+        <path id="Path_284" data-name="Path 284" class="cls-1" d="M68.615,275.2H52.554a.952.952,0,1,0,0,1.9H68.615a.952.952,0,0,0,0-1.9Z" transform="translate(-51.602 -275.201)"/>
+      </g>
+    </g>
+    <g id="Group_93" data-name="Group 93" transform="translate(46.398 54.612)">
+      <g id="Group_92" data-name="Group 92" transform="translate(0 0)">
+        <path id="Path_286" data-name="Path 286" class="cls-1" d="M380.621,303.313H375.9v-6.46a.952.952,0,1,0-1.9,0v7.412a.9.9,0,0,0,.88.94h5.746a.955.955,0,0,0,.952-.952A.944.944,0,0,0,380.621,303.313Z" transform="translate(-373.993 -295.901)"/>
+      </g>
+    </g>
+  </g>
+</svg>
